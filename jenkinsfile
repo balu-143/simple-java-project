@@ -1,6 +1,9 @@
 pipeline {
     agent  any  
+<<<<<<< HEAD
     triggers { pollSCM('* * * * *') }
+=======
+>>>>>>> b21d69479169908464b1366123dff7fcf5c9d955
     
     stages {
         stage('Source'){
