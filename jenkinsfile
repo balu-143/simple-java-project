@@ -1,0 +1,15 @@
+pipeline {
+    agent {label 'MASTER'}
+    stages {
+        stage('Source'){
+            steps {
+                https://github.com/balu-143/simple-java-project.git' 
+            }
+        }
+        stage('Package'){
+            steps {
+                sh 'mvn package'
+            }
+        }
+    }
+}
