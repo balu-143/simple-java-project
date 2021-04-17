@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Source'){
             steps {
-                https://github.com/balu-143/simple-java-project.git' 
+              git  'https://github.com/balu-143/simple-java-project.git' 
             }
         }
         stage('Package'){
