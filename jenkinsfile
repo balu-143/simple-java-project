@@ -1,15 +1,9 @@
-pipeline {
-    agent {label 'any'}
-    stages {
-        stage('Source'){
-            steps {
-              git  'https://github.com/balu-143/simple-java-project.git' 
-            }
-        }
-        stage('Package'){
-            steps {
-                sh 'mvn package'
-            }
-        }
+node {
+    stage('scm'){
+        git 'https://github.com/balu-143/simple-java-project.git'
+    }
+
+    stage('build'){
+        sh 'mvn package'
     }
 }
